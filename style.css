@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --bg-light: #ffffff;
+    --bg-dark: #121214;
+    --font-light: #323238;
+    --font-dark: #ffffff;
+    --icons-dark: #C4C4CC;
+    --bgcardfocus-light: #02799D;
+    --bgcard-light: #E1E1E6;
+    --bgcard-dark: #C4C4CC;
+    --bgcarfocus-dark: #0A3442;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background: var(--bg-dark);
+    width: 100vw;
+    height: min(100vh);
+
+}
+
+
+
+.light {
+    background: var(--bg-light);
+    color: var(--font-dark);
+    fill: #ffffff;
+}
+
+.hide {
+    display: none;
+}
+
+.colorMode {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 6rem;
+    height: 5rem;
+}
+
+.main-wrapper {
+   
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 12.6rem 22.6rem 18.8rem 23.3rem;
+}
+
+main {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 19.7rem;
+    width: 92rem;
+   
+    
+}
+
+.timing span {
+    font-size: 12.6rem;
+    color: var(--font-light);
+}
+
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-areas: "card1 card2"
+    "card3 card4";
+    gap: 3.2rem;
+}
+
+.texture {
+    background-color: var(--bgcard-light);
+    border-radius: 2.4rem;
+    width: 13.8rem;
+    height: 15.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4.4rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+ .nature {
+    grid-area: card1;
+}
+
+ .rain {
+    grid-area: card2;
+}
+
+ .house {
+    grid-area: card3;
+}
+
+.fire {
+    grid-area: card4;
+}
+
+
+
+.texture svg path {
+    fill: var(--font-light);
+}
+
+input {
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 9em;
+    height: 0.5em;
+    position: relative;
+   
+    border-radius: 5px;
+    background-color: var(--font-light);
+    outline: none;
+}
+
+.svgLight svg path {
+    fill: #ffffff;
+}
+
+.soundDark {
+    background-color: var(--bgcard-dark);
+
+}
+
+#clicked path {
+    fill: var(--bgcardfocus-light);
+}
+
+.lightCard {
+    background-color: #02799D;
+    
+}
+
+.lightCardsvg svg path  {
+    fill: #ffffff;
+}
